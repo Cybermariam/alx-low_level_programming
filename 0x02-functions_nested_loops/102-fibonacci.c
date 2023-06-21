@@ -5,11 +5,8 @@
  *
  * separated by comma, followed by a space
  *
- * followed by a new line
- *
  * Return: Always 0.
  */
-
 int main(void)
 {
 	int i;
@@ -27,7 +24,8 @@ int main(void)
 		if (count == 49)
 			printf("\n");
 		else
-			printf(", ");
+			printf(",");
 	}
+
 	return (0);
 }
