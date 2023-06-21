@@ -3,7 +3,7 @@
 /**
  * main - prints the first 50 Fibonacci numbers, starting with 1 and 2
  *
- * separated by comma, followed by a space
+ * separated by comma followed by a space
  *
  * Return: Always 0.
  */
@@ -21,7 +21,7 @@ int main(void)
 		fib1 = fib2;
 		fib2 = sum;
 
-		if (count == 49)
+		if (i == 49)
 			printf("\n");
 		else
 			printf(",");
