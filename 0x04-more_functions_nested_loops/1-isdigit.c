@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * _isdigit - checks for a digit
- * @c: is the character to check
- * Returns: 1 if c is a digit or 0 if otherwise
+ * _isdigit - Checks for a digit
+ * @c: is the character to be checked
+ * Return: 1 if c is a digit or 0 otherwise
  */
+
 int _isdigit(int c)
 
 {
@@ -12,5 +13,5 @@ int _isdigit(int c)
 	{
 		return (1);
 	}
-	return (0);
+		return (0);
 }
