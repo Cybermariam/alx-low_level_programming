@@ -3,10 +3,10 @@
 
 /**
  * _strpbrk - search a string for any of a set of bytes
- * @s: is where to search the string from
- * @accept: is the string to search for
+ * @s: is where  to search the string from
+ * @accept: is what to seartch for
  *
- * Return; Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 char *_strpbrk(char *s, char *accept)
 {
