@@ -9,8 +9,9 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
+
 	int needleSize = strlen(needle);
-	
+
 	while (*haystack != '\0')
 	{
 		if (strncmp(haystack, needle, needleSize) == 0)
