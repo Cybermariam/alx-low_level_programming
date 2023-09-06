@@ -22,7 +22,7 @@ char *argstostr(int ac, char **av)
 	lenTotal = 0;
 	for (x = 0; x < ac; x++)
 		lenTotal += strlen(av[x]) + 1;
-	concatArg = (char *)malloc(sizeof(char) * lenTotal);
+	concatArg = (char *)malloc(sizeof(char) * (lenTotal + 1));
 	if (concatArg == NULL)
 		return (NULL);
 	y = 0;
@@ -30,11 +30,10 @@ char *argstostr(int ac, char **av)
 	{
 		strcpy(concatArg + y, av[x]);
 		y += strlen(av[x]);
-		concatArg[y] = '\n';
-		y++;
+		
+		if (concatArg[y] == '\0')
+			concatArg[y++] = '\n';
 	}
-
-	concatArg[y - 1] = '\0';
 
 	return (concatArg);
 }
