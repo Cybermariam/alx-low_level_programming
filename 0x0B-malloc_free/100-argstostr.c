@@ -30,7 +30,6 @@ char *argstostr(int ac, char **av)
 	{
 		strcpy(concatArg + y, av[x]);
 		y += strlen(av[x]);
-		
 		if (concatArg[y] == '\0')
 			concatArg[y++] = '\n';
 	}
