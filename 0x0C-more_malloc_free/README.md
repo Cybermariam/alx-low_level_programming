@@ -1,7 +1,5 @@
 0x0C. C - More malloc, free
-
 0. Trust no one
-
 Write a function that allocates memory using malloc.
 
 Prototype: void *malloc_checked(unsigned int b);
@@ -18,6 +16,7 @@ If n is greater or equal to the length of s2 then use the entire string s2
 if NULL is passed, treat it as an empty string
 
 2. _calloc
+
 Write a function that allocates memory for an array, using malloc.
 
 Prototype: void *_calloc(unsigned int nmemb, unsigned int size);
@@ -27,7 +26,6 @@ If nmemb or size is 0, then _calloc returns NULL
 If malloc fails, then _calloc returns NULL
 
 3. array_range
-
 Write a function that creates an array of integers.
 
 Prototype: int *array_range(int min, int max);
@@ -59,3 +57,4 @@ Print the result, followed by a new line
 If the number of arguments is incorrect, print Error, followed by a new line, and exit with a status of 98
 num1 and num2 should only be composed of digits. If not, print Error, followed by a new line, and exit with a status of 98
 You are allowed to use more than 5 functions in your file
+You can use bc (man bc) to check your results.
